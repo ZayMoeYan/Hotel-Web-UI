@@ -1,0 +1,116 @@
+<section class="mb-sec" >
+    <div id="slide" class="carousel slide my-3" data-bs-ride="carousel">
+        <ul class="carousel-indicators" > 
+            <li class="active" data-bs-target="#slide" data-bs-slide-to="0" ></li>
+            <li data-bs-target="#slide" data-bs-slide-to="1" ></li>
+            <li data-bs-target="#slide" data-bs-slide-to="2" ></li>
+            <li data-bs-target="#slide" data-bs-slide-to="3" ></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img ngSrc="../../../assets/home/hotel/hotel-1.png" width="1536" height="600">
+            </div>
+            <div class="carousel-item">
+                <img ngSrc="../../../assets/home/hotel/hotel-3.png" width="1536" height="600">
+            </div>
+            <div class="carousel-item">
+                <img ngSrc="../../../assets/home/hotel/hotel-4.png" width="1536" height="600">
+            </div>
+            <div class="carousel-item">
+                <img ngSrc="../../../assets/home/hotel/hotel-2.png" width="1536" height="600">
+            </div>
+        </div>
+        <button class="carousel-control-prev bg-dark ms-3 carousel-btn my-auto" type="button" data-bs-target="#slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next bg-dark me-3 carousel-btn my-auto" type="button" data-bs-target="#slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+    <div class="container text-center mb-3">
+        <h1 class="text-primary">Welcome to Our Hotel</h1>
+        <p>
+            The 1,548 room nautically themed resort has two accommodation wings, consisting of the East and the West
+            Tower. It is complemented by the Aquaventure water park and the Lost Chambers Aquarium, home to over 65,000
+            marine animals. Atlantis, The Palm is also known as the culinary destination in the region where guests can
+            take their pick from a collection of 35 world-renowned restaurants including Bread Street Kitchen & Bar,
+            Street Pizza, Hakkasan, Nobu, En Fuego, Seafire Steakhouse & Bar and the award-winning underwater
+            restaurant, Ossiano.
+        </p>
+    </div>
+</section>
+
+
+<section class="mb-sec" >
+    <div class="container-fluid p-2">
+        <div class="container text-center mb-5">
+            <h1 class="text-primary" >Rooms</h1>
+            <p>
+                The Poseidon and Neptune Underwater Suites at Atlantis The Palm are two of only a tiny handful of
+                underwater hotel rooms around the world, and regularly appear in lists of the world's most unique
+                accommodation.
+
+                Measuring 165 m2 (1,780 sq ft) in total, the upper, entrance floor is at ground level while the master
+                bedroom and en-suite bathroom are submerged. The almost floor to ceiling windows in both the bedroom and
+                bathroom face out on to the resort's Ambassador Lagoon, home to a multitude of exotic sea creatures.[9]
+                The floor-to-ceiling windows includes 65,000 marine animal aquarium in Dubai and will be amazed as
+                sharks, rays and fish glide right past your bed.[
+            </p>
+        </div>
+
+        <div class="d-flex column-gap-2 justify-content-around">
+            @defer (on viewport) {
+                <div class="position-relative img-container text-center" >
+                    <a [routerLink]="['/room/superior']" >
+                        <img ngSrc="../../../assets/home/room/room-1.png" fill>
+                    </a>
+                    <p class="fs-1 mt-room">Superior Room</p>
+                </div>
+                <div class="position-relative img-container text-center" >
+                    <a [routerLink]="['/room/deluxe']">
+                        <img ngSrc="../../../assets/home/room/room-2.png" fill>
+                    </a>
+                    <p class="fs-1 mt-room">Deluxe Room</p>
+                </div>
+                <div class="position-relative img-container text-center" >
+                    <a [routerLink]="['/room/suite']">
+                        <img ngSrc="../../../assets/home/room/room-3.png" fill>
+                    </a>
+                    <p class="fs-1 mt-room">Suite Room</p>
+                </div>    
+            }@placeholder {
+                <p>loading...</p>
+            }
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid p-2">
+        <div class="container text-center mb-5">
+            <h1 class="text-primary" >Dining</h1>
+            <p>
+                The Poseidon and Neptune Underwater Suites at Atlantis The Palm are two of only a tiny handful of
+                underwater hotel rooms around the world, and regularly appear in lists of the world's most unique
+                accommodation.
+
+                Measuring 165 m2 (1,780 sq ft) in total, the upper, entrance floor is at ground level while the master
+                bedroom and en-suite bathroom are submerged. The almost floor to ceiling windows in both the bedroom and
+                bathroom face out on to the resort's Ambassador Lagoon, home to a multitude of exotic sea creatures.[9]
+                The floor-to-ceiling windows includes 65,000 marine animal aquarium in Dubai and will be amazed as
+                sharks, rays and fish glide right past your bed.[
+            </p>
+        </div>
+        <div class="d-flex justify-content-around">
+            @defer (on viewport) {
+                <img ngSrc="../../../assets/home/dining/dining-1.png" width="450" height="300">
+                <img ngSrc="../../../assets/home/dining/dining-2.png" width="450" height="300">
+                <img ngSrc="../../../assets/home/dining/dining-3.png" width="450" height="300">
+            }@placeholder {
+                <p>loading...</p>
+            }
+        </div>
+    </div>
+</section>
+
+<copy-right></copy-right>

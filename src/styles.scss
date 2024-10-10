@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: #4000FF;
+$dark: #000000;
+
+$bootstrap-icons-font-src: url('../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+@import url('../node_modules/bootstrap-icons/font/bootstrap-icons.scss');
+@import url('../node_modules/bootstrap/scss/bootstrap.scss');
+
+* {
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+// font
+
+.fs-md {
+    padding: 0;
+    font-size: 2rem;
+}
+
+.fs-sm {
+    font-size: 1.3rem;
+}
+
+// navbar section
+.nav-item {
+    margin-right: 5px;
+}
+
+.nav-link {
+    color: $dark;
+}
+
+.nav-link:hover {
+    color: $dark;
+    border-bottom: 2px solid $primary;
+}
+
+.nav-active {
+    color: $dark;
+    border-bottom: 2px solid $primary;
+}
+
+.drop-btn:hover {
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+// home section
+
+section {
+    margin: 0 2rem;
+}
+
+.mb-sec {
+    margin-bottom: 6rem;
+}
+
+.img-container > a > img:hover {
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.img-container {
+    width: 500px;
+    height: 300px;
+}
+
+.mt-room {
+    margin-top: 7rem;
+}
+
+.carousel-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+div > ul {
+    list-style-type: none;
+}
+
+
