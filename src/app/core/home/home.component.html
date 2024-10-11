@@ -1,10 +1,10 @@
-<section class="mb-sec" >
+<section class="mb-sec">
     <div id="slide" class="carousel slide my-3" data-bs-ride="carousel">
-        <ul class="carousel-indicators" > 
-            <li class="active" data-bs-target="#slide" data-bs-slide-to="0" ></li>
-            <li data-bs-target="#slide" data-bs-slide-to="1" ></li>
-            <li data-bs-target="#slide" data-bs-slide-to="2" ></li>
-            <li data-bs-target="#slide" data-bs-slide-to="3" ></li>
+        <ul class="carousel-indicators">
+            <li class="active" data-bs-target="#slide" data-bs-slide-to="0"></li>
+            <li data-bs-target="#slide" data-bs-slide-to="1"></li>
+            <li data-bs-target="#slide" data-bs-slide-to="2"></li>
+            <li data-bs-target="#slide" data-bs-slide-to="3"></li>
         </ul>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -20,10 +20,12 @@
                 <img ngSrc="../../../assets/home/hotel/hotel-2.png" width="1536" height="600">
             </div>
         </div>
-        <button class="carousel-control-prev bg-dark ms-3 carousel-btn my-auto" type="button" data-bs-target="#slide" data-bs-slide="prev">
+        <button class="carousel-control-prev bg-dark ms-3 carousel-btn my-auto" type="button" data-bs-target="#slide"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon"></span>
         </button>
-        <button class="carousel-control-next bg-dark me-3 carousel-btn my-auto" type="button" data-bs-target="#slide" data-bs-slide="next">
+        <button class="carousel-control-next bg-dark me-3 carousel-btn my-auto" type="button" data-bs-target="#slide"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
     </div>
@@ -41,10 +43,10 @@
 </section>
 
 
-<section class="mb-sec" >
+<section class="mb-sec">
     <div class="container-fluid p-2">
         <div class="container text-center mb-5">
-            <h1 class="text-primary" >Rooms</h1>
+            <h1 class="text-primary">Rooms</h1>
             <p>
                 The Poseidon and Neptune Underwater Suites at Atlantis The Palm are two of only a tiny handful of
                 underwater hotel rooms around the world, and regularly appear in lists of the world's most unique
@@ -54,32 +56,32 @@
                 bedroom and en-suite bathroom are submerged. The almost floor to ceiling windows in both the bedroom and
                 bathroom face out on to the resort's Ambassador Lagoon, home to a multitude of exotic sea creatures.[9]
                 The floor-to-ceiling windows includes 65,000 marine animal aquarium in Dubai and will be amazed as
-                sharks, rays and fish glide right past your bed.[
+                sharks, rays and fish glide right past your bed.
             </p>
         </div>
 
         <div class="d-flex column-gap-2 justify-content-around">
             @defer (on viewport) {
-                <div class="position-relative img-container text-center" >
-                    <a [routerLink]="['/room/superior']" >
-                        <img ngSrc="../../../assets/home/room/room-1.png" fill>
-                    </a>
-                    <p class="fs-1 mt-room">Superior Room</p>
-                </div>
-                <div class="position-relative img-container text-center" >
-                    <a [routerLink]="['/room/deluxe']">
-                        <img ngSrc="../../../assets/home/room/room-2.png" fill>
-                    </a>
-                    <p class="fs-1 mt-room">Deluxe Room</p>
-                </div>
-                <div class="position-relative img-container text-center" >
-                    <a [routerLink]="['/room/suite']">
-                        <img ngSrc="../../../assets/home/room/room-3.png" fill>
-                    </a>
-                    <p class="fs-1 mt-room">Suite Room</p>
-                </div>    
+            <div class="position-relative img-container text-center">
+                <a [routerLink]="['/room/superior']">
+                    <img ngSrc="../../../assets/home/room/room-1.png" fill>
+                </a>
+                <p class="fs-1 mt-room">Superior Room</p>
+            </div>
+            <div class="position-relative img-container text-center">
+                <a [routerLink]="['/room/deluxe']">
+                    <img ngSrc="../../../assets/home/room/room-2.png" fill>
+                </a>
+                <p class="fs-1 mt-room">Deluxe Room</p>
+            </div>
+            <div class="position-relative img-container text-center">
+                <a [routerLink]="['/room/suite']">
+                    <img ngSrc="../../../assets/home/room/room-3.png" fill>
+                </a>
+                <p class="fs-1 mt-room">Suite Room</p>
+            </div>
             }@placeholder {
-                <p>loading...</p>
+            <p>loading...</p>
             }
         </div>
     </div>
@@ -88,26 +90,21 @@
 <section>
     <div class="container-fluid p-2">
         <div class="container text-center mb-5">
-            <h1 class="text-primary" >Dining</h1>
+            <h1 class="text-primary">Dining</h1>
             <p>
-                The Poseidon and Neptune Underwater Suites at Atlantis The Palm are two of only a tiny handful of
-                underwater hotel rooms around the world, and regularly appear in lists of the world's most unique
-                accommodation.
-
-                Measuring 165 m2 (1,780 sq ft) in total, the upper, entrance floor is at ground level while the master
-                bedroom and en-suite bathroom are submerged. The almost floor to ceiling windows in both the bedroom and
-                bathroom face out on to the resort's Ambassador Lagoon, home to a multitude of exotic sea creatures.[9]
-                The floor-to-ceiling windows includes 65,000 marine animal aquarium in Dubai and will be amazed as
-                sharks, rays and fish glide right past your bed.[
+                Prepare all five senses for an experience that will raise the expectations of what a culinary
+                destination should be. The world’s most renowned chefs and the region’s most awarded Michelin stars in
+                one destination, will bring their individual mastery to Dubai. You're spoiled for choice when it comes
+                to swimming at Atlantis, with two huge pools, two private beaches, and endless watersports.
             </p>
         </div>
         <div class="d-flex justify-content-around">
             @defer (on viewport) {
-                <img ngSrc="../../../assets/home/dining/dining-1.png" width="450" height="300">
-                <img ngSrc="../../../assets/home/dining/dining-2.png" width="450" height="300">
-                <img ngSrc="../../../assets/home/dining/dining-3.png" width="450" height="300">
+            <img ngSrc="../../../assets/home/dining/dining-1.png" width="450" height="300">
+            <img ngSrc="../../../assets/home/dining/dining-2.png" width="450" height="300">
+            <img ngSrc="../../../assets/home/dining/dining-3.png" width="450" height="300">
             }@placeholder {
-                <p>loading...</p>
+            <p>loading...</p>
             }
         </div>
     </div>

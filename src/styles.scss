@@ -1,14 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
+$bootstrap-icons-font-src: url('../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff');
+
+$enable-rounded: false;
 $primary: #4000FF;
 $dark: #000000;
 
-$bootstrap-icons-font-src: url('../node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff');
+$focus-ring-width: 1px;
+$focus-ring-opacity: 60%;
+$focus-ring-color: $primary;
+
+
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
 
-@import url('../node_modules/bootstrap-icons/font/bootstrap-icons.scss');
-@import url('../node_modules/bootstrap/scss/bootstrap.scss');
+
 
 * {
     font-family: "Roboto Slab", serif;
@@ -32,6 +40,10 @@ $bootstrap-icons-font-src: url('../node_modules/bootstrap-icons/font/fonts/boots
 
 .fs-sm {
     font-size: 1.3rem;
+}
+
+.text-gray {
+    color: #9B9B9B;
 }
 
 // navbar section
@@ -95,4 +107,23 @@ div > ul {
     list-style-type: none;
 }
 
+// dining section
+
+.dining-img {
+    padding: 200px;
+    background-image: url('assets/home/dining/dining-4.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// facility section
+
+.facility-img {
+    padding: 200px;
+    background-image: url('assets/facility/pools/pool-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 

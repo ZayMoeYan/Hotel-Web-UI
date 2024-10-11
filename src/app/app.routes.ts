@@ -29,5 +29,8 @@ export const routes: Routes = [
     {
         path: 'contact', loadComponent: () => import('./core/location-contact/location-contact.component').then(c => c.LocationContactComponent), title: 'LOCATION & CONTACT'
     },
+    {
+        path: '', redirectTo: '/home', pathMatch: 'full'
+    }
     
 ];
